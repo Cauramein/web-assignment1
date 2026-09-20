@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <!-- Подключаем внешний CSS файл -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shyngys Zaikenov</h1>
+        <h2>Software Engineering | SE-2523</h2>
+    </header>
+
+    <nav class="site-nav">
+        <!-- Ссылки для навигации по ID внутри страницы -->
+        <a href="#about-me">About Me</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Секция 1: Обо мне -->
+        <section id="about-me" class="content-section">
+            <h3>About Me</h3>
+            <div class="profile-card">
+                <!-- Относительный путь к картинке с alt-текстом -->
+                <img src="images/avatar.jpg" alt="Portrait of Shyngys" class="profile-img">
+                <p>Hello! I am a second-year Software Engineering student at Astana IT University. I focus primarily on Java development and object-oriented programming.</p>
+            </div>
+
+            <h4>My Hobbies</h4>
+            <!-- Нумерованный список -->
+            <ol>
+                <li>Writing clean Java code and algorithms</li>
+                <li>Playing video games (Elden Ring, Cyberpunk 2077, etc.)</li>
+                <li>Developing Telegram bots</li>
+            </ol>
+
+            <h4>Favorite Websites</h4>
+            <!-- Маркированный список с внешними ссылками -->
+            <ul>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
+            </ul>
+
+            <!-- Кнопка без JS действий -->
+            <button type="button" class="action-btn">Click Me</button>
+
+            <!-- Параграф с настроением и эмодзи -->
+            <p class="mood-text">Currently feeling highly motivated to code and improve my GPA! 💻✨☕</p>
+        </section>
+
+        <!-- Секция 2: Расписание -->
+        <section id="schedule" class="content-section">
+            <h3>Class Schedule</h3>
+            <!-- Таблица с заголовками -->
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Monday</td>
+                        <td>03:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>SDP</td>
+                        <td>Wednesday</td>
+                        <td>02:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>DAA</td>
+                        <td>Friday</td>
+                        <td>04:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Секция 3: Контакты (Форма) -->
+        <section id="contact" class="content-section">
+            <h3>Contact Me</h3>
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="favColor">Favorite Color:</label>
+                    <input type="color" id="favColor" name="favColor" value="#3498db">
+                </div>
+                <button type="submit" class="action-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shyngys Zaikenov. Built for Web Development Assignment 1.</p>
+    </footer>
+</body>
+</html>

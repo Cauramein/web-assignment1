@@ -1,0 +1,172 @@
+/* Base Styles & Typography */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #569cd6; 
+    font-weight: normal;
+}
+
+/* Header & Footer */
+header {
+    background-color: #252526;
+    border-bottom: 3px solid #007acc;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1, header h2 {
+    color: #4ec9b0; 
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #252526;
+    border-top: 1px solid #333333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Layout Components */
+.content-section {
+    background-color: #252526;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Profile Container & Image Float Clearfix */
+.profile-card {
+    padding: 15px;
+    background-color: #2d2d30;
+    border-left: 5px solid #007acc;
+    margin-bottom: 20px;
+    overflow: hidden; 
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin: 0 20px 10px 0;
+    border: 2px solid #569cd6;
+    object-fit: cover;
+}
+
+/* Typography Enhancements */
+.content-section a {
+    color: #4ec9b0; 
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    color: #569cd6; 
+    text-decoration: underline;
+}
+
+ol, ul {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* UI Elements */
+.action-btn {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: inherit;
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #444444;
+    padding: 12px;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #333333;
+    color: #4ec9b0;
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    color: #ce9178; 
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #cccccc;
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Navigation */
+.site-nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.site-nav a {
+    color: #dcdcaa; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Interactive States */
+.site-nav a:hover, .action-btn:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.action-btn:hover {
+    background-color: #005f9e;
+}
+
+.site-nav a:focus, button:focus, input:focus {
+    outline: 2px dashed #4ec9b0;
+    outline-offset: 4px;
+}
+
+/* Unique Section Indicators */
+#about-me {
+    border-left: 4px solid #c586c0; 
+}
+
+#schedule {
+    border-left: 4px solid #b5cea8; 
+}
+
+#contact {
+    border-left: 4px solid #d16969; 
+}
